@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class upperman {
+public class ucupman {
     public static void main(String[] args) {
         Scanner braws = new Scanner(System.in);
         int lebar = braws.nextInt();
