@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class upperman {
+    public static void main(String[] args) {
+        Scanner braws = new Scanner(System.in);
+        int lebar = braws.nextInt();
+        int panjang = braws.nextInt();
+        int tebal = braws.nextInt();
+
+        for (int i = 0; i<panjang ; i++){
+            for (int j=0; j<lebar;j++){
+                if (j<tebal||j>=(lebar-tebal)){
+                    System.out.print("U");
+                } else{
+                    if (i>=panjang-tebal){
+                        System.out.print("U");
+                    } else {
+                        System.out.print(" ");
+                    }
+                }
+            }
+            System.out.println();
+        }
+        braws.close();
+    }
+}
